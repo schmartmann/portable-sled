@@ -1,4 +1,6 @@
 Sled.plugins = {
+	// Uncomment these plugins as needed
+	//
 	// onLoad: function(args) {
 	// 	console.log("Ad-specific onLoad");
 	// },
