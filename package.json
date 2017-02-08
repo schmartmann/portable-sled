@@ -1,0 +1,19 @@
+{
+  "name": "portable-sled-challenge",
+  "version": "1.0.0",
+  "description": "Sled Engine that's been modified to run w/o an adserver",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sledmobile/portable-sled.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sledmobile/portable-sled/issues"
+  },
+  "homepage": "https://github.com/sledmobile/portable-sled#readme"
+}

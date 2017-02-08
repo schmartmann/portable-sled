@@ -4,7 +4,7 @@
 /* ===== Place all ad-specific CSS beneath here ===== */
 
 #sled_ad {
-  min-height: 400px;
+  min-height: 420px;
   background-color: #ddd;
   font-family: Helvetica, Arial, sans-serif;
   color: #fff;
@@ -22,4 +22,71 @@
     letter-spacing: 1px;
     vertical-align: middle;
     text-transform: uppercase;
+  }
+  #sled_rotator {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    background-color: red;
+    overflow: hidden;
+  }
+    #sled_sprite {
+      position: absolute;
+      top: 0;
+      left: 0px;
+      height: 100%;
+      zoom: 1.4;
+      width: 10000px;
+      background-image: url('sprite.jpg');
+      background-position: left center;
+      background-size: contain;
+      background-repeat: repeat no-repeat;
+    }
+
+    #direction {
+      font-size: 8px;
+      color: white;
+      text-transform: uppercase;
+      position: relative;
+      top: 75%;
+      left: 0;
+    }
+
+    .paused {
+      -webkit-animation-play-state:paused !important;
+      -moz-animation-play-state:paused !important;
+      -o-animation-play-state:paused !important;
+      animation-play-state:paused !important;
+    }
+
+    .sprite_rotate_left {
+      animation: spriteLeft 1.5s steps(35) 1;
+    }
+
+    .sprite_rotate_right {
+      animation: spriteRight 1.5s steps(35) 1;
+    }
+
+
+  @keyframes spriteLeft {
+    0% {
+      left: 0px;
+    }
+    100% {
+      left: -9723px;
+    }
+  }
+
+
+  @keyframes spriteRight {
+    0% {
+      left: -9723px;
+    }
+
+    100%
+    {
+      left: 0px;
+    }
   }
